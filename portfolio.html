@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Kumar Yadav | Infrastructure Visionary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        :root {
+            --primary: #22c55e;
+            --secondary: #3b82f6;
+            --bg-dark: #020617;
+        }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--bg-dark);
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .animated-gradient {
+            background: linear-gradient(-45deg, #22c55e, #10b981, #3b82f6, #2563eb);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .profile-ring {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden; /* Ensures the image stays round */
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+        }
+
+        .profile-ring img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Crops image to fill circle */
+        }
+
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width .3s;
+        }
+        .nav-link:hover::after { width: 100%; }
+
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(34, 197, 94, 0.1) 0%, transparent 70%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blob top-0 -left-20"></div>
+    <div class="blob bottom-0 -right-20"></div>
+
+    <nav class="fixed w-full z-50 backdrop-blur-md border-b border-white/5 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter">
+                KRISHNA<span class="text-green-500">.</span>
+            </div>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="nav-link text-sm font-semibold opacity-80 hover:opacity-100 uppercase tracking-widest">Init</a>
+                <a href="#about" class="nav-link text-sm font-semibold opacity-80 hover:opacity-100 uppercase tracking-widest">Story</a>
+                <a href="#skills" class="nav-link text-sm font-semibold opacity-80 hover:opacity-100 uppercase tracking-widest">Expertise</a>
+                <a href="#projects" class="nav-link text-sm font-semibold opacity-80 hover:opacity-100 uppercase tracking-widest">Works</a>
+                <a href="#contact" class="bg-green-500 text-black px-6 py-2 rounded-full font-bold hover:scale-105 transition active:scale-95">Let's Talk</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex flex-col justify-center items-center px-6 overflow-hidden">
+        
+        <div class="text-center max-w-4xl" data-aos="fade-up">
+            <h2 class="text-green-400 font-mono mb-4 tracking-[0.3em] uppercase text-sm">Civil Engineering Specialist</h2>
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-6 leading-none">
+                Krishna Kumar <br> <span class="text-transparent bg-clip-text animated-gradient">Yadav</span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                Transforming complex engineering challenges into sustainable structural masterpieces. 
+                Focused on Grade 3.60 precision and modern AutoCAD-integrated solutions.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#projects" class="group bg-white text-black px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-green-500 transition duration-300">
+                    View Portfolio <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                </a>
+                <div class="flex items-center gap-6 px-6">
+                    <a href="tel:+9768813119" class="text-2xl hover:text-green-400 transition" title="Call Me"><i class="fa-solid fa-phone"></i></a>
+                    <a href="mailto:ky285601@gmail.com" class="text-2xl hover:text-green-400 transition" title="Email Me"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="zoom-in" data-aos-delay="200" class="profile-ring mt-20 mb-10 shadow-2xl shadow-green-500/20">
+            <img src="https://scontent.fbir1-1.fna.fbcdn.net/v/t39.30808-6/612061622_1312251360661743_394750356470149088_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=1l4Cyvp1PocQ7kNvwGO6-fL&_nc_oc=Adq-XS9sV2_mscgRIbxwkZQNmQOg1h_10qZZw-6-Y3TWlCJoeLajT4gOE1ixaJ8gdUdXeTmJMRvmVEWVldR0wq62&_nc_zt=23&_nc_ht=scontent.fbir1-1.fna&_nc_gid=Z4ySDlcRciwoWmKDNdl5Tw&_nc_ss=7a3a8&oh=00_Af00AFP_da3UsbtAxMNY5bEWtePEl41PS6gmR91l_9CbZg&oe=69EBFD4D" alt="Krishna Kumar Yadav Profile">
+        </div>
+
+        <div class="absolute bottom-10 animate-bounce">
+            <i class="fa-solid fa-chevron-down opacity-30 text-2xl"></i>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="relative" data-aos="fade-right">
+                <div class="absolute -top-10 -left-10 text-[12rem] font-black opacity-5 select-none">01</div>
+                <h2 class="text-4xl font-bold mb-8">Building the <span class="text-green-500 underline decoration-2 underline-offset-8">Blueprint</span> of Tomorrow</h2>
+                <div class="space-y-6 text-slate-400 leading-relaxed text-lg">
+                    <p>My journey in Civil Engineering is driven by a fascination with how raw materials transform into towering structures. With a solid academic standing (Grade 3.60), I combine theoretical excellence with practical proficiency in industry-leading tools.</p>
+                    <p>I specialize in structural integrity and cost-effective estimations, ensuring that every project is not just beautiful, but safe and financially viable.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-6 mt-12">
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="text-3xl font-bold text-green-400">2022</h4>
+                        <p class="text-xs uppercase tracking-widest text-slate-500">Graduation Year</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="text-3xl font-bold text-blue-400">3.60</h4>
+                        <p class="text-xs uppercase tracking-widest text-slate-500">Academic Grade</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-6" data-aos="fade-left">
+                <div class="glass-card p-8 rounded-3xl flex gap-6 items-start">
+                    <div class="https://areicon.com/upload/project/250922-043019-modern-mixed-use-building-in-kumaripati-lalitpur-McLFY.jpg"><i class="fa-solid fa-drafting-compass text-2xl"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Modern Drafting</h3>
+                        <p class="text-slate-400 text-sm">Advanced 2D/3D layouts using AutoCAD and Google SketchUp for accurate spatial planning.</p>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-3xl flex gap-6 items-start">
+                    <div class="bg-blue-500/10 p-4 rounded-xl text-blue-500"><i class="fa-solid fa-calculator text-2xl"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Estimation & Costing</h3>
+                        <p class="text-slate-400 text-sm">Precise material take-offs and budget analysis to optimize construction resources.</p>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-3xl flex gap-6 items-start">
+                    <div class="bg-purple-500/10 p-4 rounded-xl text-purple-500"><i class="fa-solid fa-hard-hat text-2xl"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Structural Analysis</h3>
+                        <p class="text-slate-400 text-sm">Detailed load calculations and safety modeling using STAAD.Pro and manual verification.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-32 bg-slate-950/50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl font-bold mb-4">Master Projects</h2>
+                    <p class="text-slate-400">A showcase of design, analysis, and structural innovation.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card overflow-hidden rounded-3xl group" data-aos="fade-up">
+                    <div class="h-72 overflow-hidden relative">
+                        <img src="https://areicon.com/upload/project/250922-043019-modern-mixed-use-building-in-kumaripati-lalitpur-McLFY.jpg" alt="The Zenith Plaza Commercial Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <span class="text-green-500 font-mono text-xs mb-2 block uppercase">Structural Design</span>
+                        <h3 class="text-xl font-bold mb-4 italic">The Zenith Plaza</h3>
+                        <p class="text-slate-400 text-sm mb-6">A multi-story commercial complex focused on seismic resistance and modern aesthetics.</p>
+                        <div class="flex gap-2">
+                            <span class="bg-white/5 px-3 py-1 rounded text-[10px]">AutoCAD</span>
+                            <span class="bg-white/5 px-3 py-1 rounded text-[10px]">STAAD.Pro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card overflow-hidden rounded-3xl group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-72 overflow-hidden relative">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd0Hv3WjaLmRfEJW7Erl1GGv1ZFZYv7jbLSw&s" alt="Eco-Village Grid Housing Design" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <span class="text-blue-500 font-mono text-xs mb-2 block uppercase">Urban Planning</span>
+                        <h3 class="text-xl font-bold mb-4 italic">Eco-Village Grid</h3>
+                        <p class="text-slate-400 text-sm mb-6">Sustainable housing layout with optimized road networks and drainage systems.</p>
+                        <div class="flex gap-2">
+                            <span class="bg-white/5 px-3 py-1 rounded text-[10px]">SketchUp</span>
+                            <span class="bg-white/5 px-3 py-1 rounded text-[10px]">Surveying</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card overflow-hidden rounded-3xl group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-72 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=800&auto=format&fit=crop" alt="Nova Bridge Engineering Study" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <span class="text-purple-500 font-mono text-xs mb-2 block uppercase">Infrastructure</span>
+                        <h3 class="text-xl font-bold mb-4 italic">Nova Bridge Study</h3>
+                        <p class="text-slate-400 text-sm mb-6">Comprehensive estimation and concrete mix design for a small-span highway bridge.</p>
+                        <div class="flex gap-2">
+                            <span class="bg-white/5 px-3 py-1 rounded text-[10px]">Estimation</span>
+                            <span class="bg-white/5 px-3 py-1 rounded text-[10px]">Mix Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-32 container mx-auto px-6">
+        <div class="grid lg:grid-cols-4 gap-6">
+            <div class="lg:col-span-2 flex flex-col justify-center" data-aos="fade-right">
+                <h2 class="text-5xl font-extrabold mb-6">Technical <br> <span class="text-green-500">Arsenal</span></h2>
+                <p class="text-slate-400 mb-8 max-w-sm">From heavy machinery surveying to precision digital drafting, my toolkit is ready for any challenge.</p>
+                <div class="flex flex-wrap gap-4">
+                    <span class="glass-card px-6 py-2 rounded-full border-green-500/20 text-green-400">Teamwork</span>
+                    <span class="glass-card px-6 py-2 rounded-full border-blue-500/20 text-blue-400">Problem Solving</span>
+                    <span class="glass-card px-6 py-2 rounded-full border-purple-500/20 text-purple-400">Time Management</span>
+                </div>
+            </div>
+            
+            <div class="glass-card p-8 rounded-3xl" data-aos="zoom-in">
+                <i class="fa-solid fa-code text-3xl text-green-500 mb-6"></i>
+                <h3 class="text-lg font-bold mb-6">Softwares</h3>
+                <div class="space-y-4 text-sm font-semibold opacity-70">
+                    <div class="flex justify-between border-b border-white/5 pb-2"><span>AutoCAD</span> <span>95%</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-2"><span>STAAD.Pro</span> <span>85%</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-2"><span>SketchUp</span> <span>80%</span></div>
+                    <div class="flex justify-between"><span>MS Office</span> <span>90%</span></div>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-compass text-3xl text-blue-500 mb-6"></i>
+                <h3 class="text-lg font-bold mb-6">Field Work</h3>
+                <div class="space-y-4 text-sm font-semibold opacity-70">
+                    <div class="flex justify-between border-b border-white/5 pb-2"><span>Surveying</span> <span>90%</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-2"><span>Levelling</span> <span>95%</span></div>
+                    <div class="flex justify-between border-b border-white/5 pb-2"><span>Costing</span> <span>88%</span></div>
+                    <div class="flex justify-between"><span>Site Supervision</span> <span>85%</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="pt-32 pb-10 bg-slate-950 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-5xl font-bold mb-8">Ready to Build Something <br> <span class="text-green-500 underline">Great?</span></h2>
+                <div class="flex flex-wrap justify-center gap-10 mt-12">
+                    <div class="flex items-center gap-4 hover:scale-105 transition">
+                        <div class="bg-white/5 w-12 h-12 rounded-full flex items-center justify-center text-green-500"><i class="fa-solid fa-phone"></i></div>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-500 uppercase">Call Me</p>
+                            <a href="tel:+9768813119" class="font-bold">+976 8813119</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 hover:scale-105 transition">
+                        <div class="bg-white/5 w-12 h-12 rounded-full flex items-center justify-center text-blue-500"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-500 uppercase">Email Me</p>
+                            <a href="mailto:ky285601@gmail.com" class="font-bold">ky285601@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center text-slate-500 text-xs tracking-widest gap-6">
+                <p>DESIGNED BY KRISHNA KUMAR YADAV &copy; 2026</p>
+                <p>NEPAL | SIRAHA, KARJANHA-07</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
